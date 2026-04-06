@@ -1,104 +1,84 @@
-<svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Fundo -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="260" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#03040A"/>
-      <stop offset="30%" stop-color="#0D0620"/>
-      <stop offset="65%" stop-color="#2B0A4D"/>
-      <stop offset="100%" stop-color="#7B2CFB"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#02030A"/>
+      <stop offset="35%" stop-color="#0F0621"/>
+      <stop offset="70%" stop-color="#2B0A4D"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
 
-    <!-- Glow -->
-    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(860 70) rotate(90) scale(180 320)">
-      <stop stop-color="#C084FC" stop-opacity="0.35"/>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 80) rotate(90) scale(160 340)">
+      <stop stop-color="#C084FC" stop-opacity="0.45"/>
       <stop offset="1" stop-color="#C084FC" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 200) rotate(90) scale(150 270)">
-      <stop stop-color="#7C3AED" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 260) rotate(90) scale(120 260)">
+      <stop stop-color="#8B5CF6" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
-
-    <linearGradient id="waveFade" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="white" stop-opacity="0.03"/>
-      <stop offset="50%" stop-color="white" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="white" stop-opacity="0.06"/>
-    </linearGradient>
   </defs>
 
   <!-- Fundo -->
-  <rect width="1000" height="260" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#bg)"/>
 
-  <!-- Glow animado -->
-  <ellipse cx="860" cy="70" rx="280" ry="140" fill="url(#glow1)">
-    <animate attributeName="cx" values="860;830;860" dur="8s" repeatCount="indefinite"/>
+  <!-- Brilhos -->
+  <ellipse cx="1040" cy="80" rx="320" ry="150" fill="url(#glowRight)">
+    <animate attributeName="cx" values="1040;1010;1040" dur="10s" repeatCount="indefinite"/>
   </ellipse>
 
-  <ellipse cx="180" cy="200" rx="220" ry="120" fill="url(#glow2)">
-    <animate attributeName="cx" values="180;220;180" dur="10s" repeatCount="indefinite"/>
+  <ellipse cx="180" cy="260" rx="230" ry="120" fill="url(#glowLeft)">
+    <animate attributeName="cx" values="180;220;180" dur="12s" repeatCount="indefinite"/>
   </ellipse>
 
-  <!-- Linhas verticais -->
+  <!-- Linhas -->
   <g opacity="0.08">
-    <rect x="20" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="35" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="50" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="65" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="80" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="95" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="110" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="125" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="140" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="155" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="170" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="185" y="0" width="1" height="260" fill="#C4B5FD"/>
-    <rect x="200" y="0" width="1" height="260" fill="#C4B5FD"/>
+    <rect x="30" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="50" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="70" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="90" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="110" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="130" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="150" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="170" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="190" y="0" width="1" height="320" fill="#D8B4FE"/>
+    <rect x="210" y="0" width="1" height="320" fill="#D8B4FE"/>
   </g>
 
-  <!-- Onda principal -->
-  <path d="M0 190 C180 150, 340 230, 520 195 C720 155, 850 220, 1000 180 L1000 260 L0 260 Z"
-        fill="url(#waveFade)">
-    <animate attributeName="d"
-      dur="8s"
-      repeatCount="indefinite"
+  <!-- Onda fundo -->
+  <path fill="rgba(255,255,255,0.06)">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
       values="
-      M0 190 C180 150, 340 230, 520 195 C720 155, 850 220, 1000 180 L1000 260 L0 260 Z;
-      M0 180 C200 135, 360 240, 530 205 C740 160, 860 210, 1000 170 L1000 260 L0 260 Z;
-      M0 190 C180 150, 340 230, 520 195 C720 155, 850 220, 1000 180 L1000 260 L0 260 Z
-      "/>
+      M0,230 C200,180 360,270 620,230 C860,190 1080,250 1280,210 L1280,320 L0,320 Z;
+      M0,220 C240,170 390,280 650,240 C910,190 1090,245 1280,200 L1280,320 L0,320 Z;
+      M0,230 C200,180 360,270 620,230 C860,190 1080,250 1280,210 L1280,320 L0,320 Z
+      " />
   </path>
 
-  <!-- Linha de onda -->
-  <path d="M0 200 C180 170, 330 240, 520 210 C700 180, 860 225, 1000 190"
-        stroke="#E9D5FF"
-        stroke-opacity="0.18"
-        stroke-width="2"
-        fill="none">
-    <animate attributeName="d"
-      dur="6s"
-      repeatCount="indefinite"
+  <!-- Onda linha -->
+  <path stroke="#E9D5FF" stroke-opacity="0.18" stroke-width="2" fill="none">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
       values="
-      M0 200 C180 170, 330 240, 520 210 C700 180, 860 225, 1000 190;
-      M0 190 C170 155, 350 245, 530 215 C710 175, 850 220, 1000 180;
-      M0 200 C180 170, 330 240, 520 210 C700 180, 860 225, 1000 190
-      "/>
+      M0,240 C220,200 390,280 650,245 C900,210 1090,255 1280,220;
+      M0,230 C240,185 400,290 660,250 C920,205 1100,245 1280,210;
+      M0,240 C220,200 390,280 650,245 C900,210 1090,255 1280,220
+      " />
   </path>
 
-  <!-- TEXTO DENTRO DO BANNER -->
-  <text x="500" y="95"
+  <!-- Texto -->
+  <text x="640" y="115"
         text-anchor="middle"
         fill="white"
-        font-size="52"
-        font-family="Arial, Helvetica, sans-serif"
+        font-size="54"
+        font-family="Segoe UI, Arial, sans-serif"
         font-weight="700">
     TsukiKazo
   </text>
 
-  <text x="500" y="145"
+  <text x="640" y="165"
         text-anchor="middle"
         fill="white"
-        font-size="22"
-        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-family="Segoe UI, Arial, sans-serif"
         font-weight="600">
     Full Stack Developer | Automation | Integrations | AI
   </text>
