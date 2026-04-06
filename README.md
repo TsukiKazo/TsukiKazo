@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg" alt="Purple Animated Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/TsukiKazo/TsukiKazo/main/banner.svg" alt="TsukiKazo Banner" width="100%" />
 </p>
 <p align="center">
   <a href="https://github.com/TsukiKazo">
