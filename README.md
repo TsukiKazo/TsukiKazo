@@ -1,3 +1,5 @@
+<h1 align="center">TsukiKazo</h1>
+<h3 align="center">Full Stack Developer | Automation | Integrations | AI</h3>
 <p align="center">
   <img src="./banner.svg" alt="Purple Animated Banner" width="100%" />
 </p>
