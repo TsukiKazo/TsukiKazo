@@ -1,0 +1,84 @@
+<svg width="1000" height="250" viewBox="0 0 1000 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Fundo gradiente -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#05030D"/>
+      <stop offset="35%" stop-color="#140A2E"/>
+      <stop offset="70%" stop-color="#2D0B52"/>
+      <stop offset="100%" stop-color="#6A0DAD"/>
+    </linearGradient>
+
+    <!-- Glow roxo -->
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(850 70) rotate(90) scale(160 300)">
+      <stop stop-color="#B388FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#B388FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 180) rotate(90) scale(140 260)">
+      <stop stop-color="#7C3AED" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Máscara de fade -->
+    <linearGradient id="waveFade" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1000" height="250" fill="url(#bg)"/>
+
+  <!-- Glow -->
+  <ellipse cx="850" cy="70" rx="250" ry="130" fill="url(#glow1)">
+    <animate attributeName="cx" values="850;820;850" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="200" cy="180" rx="220" ry="120" fill="url(#glow2)">
+    <animate attributeName="cx" values="200;240;200" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Linhas finas verticais -->
+  <g opacity="0.08">
+    <rect x="20" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="40" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="60" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="80" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="100" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="120" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="140" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="160" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="180" y="0" width="1" height="250" fill="#C4B5FD"/>
+    <rect x="200" y="0" width="1" height="250" fill="#C4B5FD"/>
+  </g>
+
+  <!-- Onda 1 -->
+  <path d="M0 180 C150 140, 300 220, 500 180 C700 140, 850 210, 1000 170 L1000 250 L0 250 Z"
+        fill="url(#waveFade)">
+    <animate attributeName="d"
+      dur="8s"
+      repeatCount="indefinite"
+      values="
+      M0 180 C150 140, 300 220, 500 180 C700 140, 850 210, 1000 170 L1000 250 L0 250 Z;
+      M0 170 C180 120, 320 230, 520 190 C720 150, 860 200, 1000 160 L1000 250 L0 250 Z;
+      M0 180 C150 140, 300 220, 500 180 C700 140, 850 210, 1000 170 L1000 250 L0 250 Z
+      "/>
+  </path>
+
+  <!-- Onda 2 -->
+  <path d="M0 195 C180 165, 320 235, 520 205 C700 180, 860 225, 1000 190"
+        stroke="#C4B5FD"
+        stroke-opacity="0.18"
+        stroke-width="2"
+        fill="none">
+    <animate attributeName="d"
+      dur="6s"
+      repeatCount="indefinite"
+      values="
+      M0 195 C180 165, 320 235, 520 205 C700 180, 860 225, 1000 190;
+      M0 185 C170 150, 340 240, 530 210 C710 170, 850 220, 1000 180;
+      M0 195 C180 165, 320 235, 520 205 C700 180, 860 225, 1000 190
+      "/>
+  </path>
+</svg>
