@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Caio Henrique/Caio Henrique/main/banner.svg" alt="TsukiKazo Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/TsukiKazo/TsukiKazo/main/banner.svg?v=2" alt="Caio Henrique Banner" width="100%" />
 </p>
 <p align="center">
   <a href="https://github.com/TsukiKazo">
