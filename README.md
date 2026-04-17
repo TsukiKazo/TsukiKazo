@@ -25,10 +25,9 @@
 
 ## 👋 About Me
 
-- 💻 Full Stack Jr Developer focused on practical solutions, automation tools, and system integrations.
-- 🛠️ Currently working on desktop tools, backend utilities, and real-world technical projects.
-- 📚 Continuously learning more about Java, Python, C#, machine learning, and software development.
-- 🤝 Open to building useful tools, automation workflows, and scalable development solutions.
+- 💻 Computer Science Student (1 / 5).
+- 📚 Continuously learning Python, machine learning, and software development.
+- 🤝 Open to learn Anything.
 - 🌍 Based in Brazil.
 
 ---
@@ -37,17 +36,12 @@
 
 ### 💻 Languages & Frameworks
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,java,js,html,css,php,cs,dotnet,nodejs" />
+  <img src="https://skillicons.dev/icons?i=python,lua" />
 </p>
 
 ### 🛠️ Tools & Platforms
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,docker,linux,powershell,postman,npm" />
-</p>
-
-### 🗄️ Databases
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
 </p>
 
 ---
@@ -65,22 +59,6 @@
 
 ---
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TsukiKazo&theme=tokyonight&no-frame=true&row=1&column=6" />
-</p>
-
----
-
-## 📌 Featured Projects
-
-- 🔹 **Desktop Tools** — Utilities and desktop-focused solutions built to improve productivity and workflow.
-- 🔹 **Automation Projects** — Scripts and systems created to automate repetitive tasks and optimize processes.
-- 🔹 **Backend Utilities** — Practical backend-focused tools, integrations, and technical experiments.
-
----
-
 ## 🐍 Contribution Snake
 
 <p align="center">
@@ -92,16 +70,9 @@
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://github.com/TsukiKazo">
-    <img src="https://skillicons.dev/icons?i=github" />
-  </a>
   <a href="mailto:caiohsilva.neuza@gmail.com">
     <img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
 
 ---
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00F5D4&height=120&section=footer"/>
-</p>
