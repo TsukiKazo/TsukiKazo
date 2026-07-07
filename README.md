@@ -25,7 +25,7 @@
 
 ## 👋 About Me
 
-- 💻 Computer Science Student (1 / 5).
+- 💻 Computer Science Student (2 / 5).
 - 📚 Continuously learning Python, machine learning, and software development.
 - 🤝 Open to learn Anything.
 - 🌍 Based in Brazil.
