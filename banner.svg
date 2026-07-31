@@ -1,87 +1,132 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#02030A"/>
-      <stop offset="35%" stop-color="#0F0621"/>
-      <stop offset="70%" stop-color="#2B0A4D"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
+      <stop stop-color="#030303"/>
+      <stop offset="0.55" stop-color="#080704"/>
+      <stop offset="1" stop-color="#171004"/>
     </linearGradient>
-
-    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 80) rotate(90) scale(160 340)">
-      <stop stop-color="#C084FC" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#C084FC" stop-opacity="0"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF2AE"/>
+      <stop offset="0.25" stop-color="#EBC75D"/>
+      <stop offset="0.58" stop-color="#C08C27"/>
+      <stop offset="1" stop-color="#6E450C"/>
+    </linearGradient>
+    <linearGradient id="goldStroke" x1="850" y1="50" x2="1190" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B450E"/>
+      <stop offset="0.35" stop-color="#F2D26E"/>
+      <stop offset="0.7" stop-color="#B47D1E"/>
+      <stop offset="1" stop-color="#FFEAA0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#F4D46C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#F4D46C" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#F4D46C" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1018 152) rotate(90) scale(218 290)">
+      <stop stop-color="#E0AF3C" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#E0AF3C" stop-opacity="0"/>
     </radialGradient>
-
-    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 260) rotate(90) scale(120 260)">
-      <stop stop-color="#8B5CF6" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
-    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#D9AC42" stroke-opacity="0.065"/>
+    </pattern>
+    <filter id="softGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="18" fill="url(#grid)"/>
+  <rect x="790" width="490" height="320" fill="url(#glow)">
+    <animate attributeName="opacity" values="0.48;1;0.48" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
 
-  <ellipse cx="1040" cy="80" rx="320" ry="150" fill="url(#glowRight)">
-    <animate attributeName="cx" values="1040;1010;1040" dur="10s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <ellipse cx="180" cy="260" rx="230" ry="120" fill="url(#glowLeft)">
-    <animate attributeName="cx" values="180;220;180" dur="12s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <g opacity="0.08">
-    <rect x="30" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="50" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="70" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="90" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="110" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="130" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="150" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="170" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="190" y="0" width="1" height="320" fill="#D8B4FE"/>
-    <rect x="210" y="0" width="1" height="320" fill="#D8B4FE"/>
+  <g opacity="0.35">
+    <path d="M0 261C194 224 329 289 520 255C679 226 765 238 874 202" stroke="#DDB447"/>
+    <path d="M0 277C202 240 333 306 531 270C685 242 778 249 893 214" stroke="#DDB447" stroke-opacity="0.35"/>
+    <path d="M0 292C207 257 342 320 539 286C697 259 787 265 906 228" stroke="#DDB447" stroke-opacity="0.16"/>
   </g>
 
-  <path
-    d="M0,230 C200,180 360,270 620,230 C860,190 1080,250 1280,210 L1280,320 L0,320 Z"
-    fill="#FFFFFF"
-    fill-opacity="0.06">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite"
-      values="
-      M0,230 C200,180 360,270 620,230 C860,190 1080,250 1280,210 L1280,320 L0,320 Z;
-      M0,220 C240,170 390,280 650,240 C910,190 1090,245 1280,200 L1280,320 L0,320 Z;
-      M0,230 C200,180 360,270 620,230 C860,190 1080,250 1280,210 L1280,320 L0,320 Z
-      " />
-  </path>
+  <g opacity="0.7">
+    <circle cx="32" cy="42" r="1.2" fill="#F9DF84"/>
+    <circle cx="227" cy="30" r="1" fill="#E1B84C"/>
+    <circle cx="408" cy="62" r="1.4" fill="#FFF2B1"/>
+    <circle cx="610" cy="35" r="1" fill="#E1B84C"/>
+    <circle cx="744" cy="84" r="1.3" fill="#FFF2B1"/>
+    <circle cx="1212" cy="36" r="1.2" fill="#E1B84C"/>
+    <animate attributeName="opacity" values="0.35;0.9;0.35" dur="4.2s" repeatCount="indefinite"/>
+  </g>
 
-  <path
-    d="M0,240 C220,200 390,280 650,245 C900,210 1090,255 1280,220"
-    stroke="#E9D5FF"
-    stroke-opacity="0.18"
-    stroke-width="2"
-    fill="none">
-    <animate attributeName="d" dur="6s" repeatCount="indefinite"
-      values="
-      M0,240 C220,200 390,280 650,245 C900,210 1090,255 1280,220;
-      M0,230 C240,185 400,290 660,250 C920,205 1100,245 1280,210;
-      M0,240 C220,200 390,280 650,245 C900,210 1090,255 1280,220
-      " />
-  </path>
+  <g opacity="0.42" stroke="#D5A63A" stroke-width="1">
+    <path d="M772 61H824L846 83H892"/>
+    <path d="M738 242H807L831 218H888"/>
+    <path d="M811 112H863L881 130"/>
+    <circle cx="772" cy="61" r="3" fill="#EBC75D"/>
+    <circle cx="738" cy="242" r="3" fill="#EBC75D"/>
+    <circle cx="811" cy="112" r="3" fill="#EBC75D"/>
+  </g>
 
-  <text x="50%" y="125"
-        text-anchor="middle"
-        fill="white"
-        font-size="54"
-        font-family="Arial, Helvetica, sans-serif"
-        font-weight="700">
-    Caio Henrique
-  </text>
+  <g transform="translate(842 42)">
+    <path d="M82 18H343L315 56H95L82 18Z" fill="url(#gold)" stroke="#FFE99A" stroke-opacity="0.65" stroke-width="1.4">
+      <animate attributeName="stroke-dashoffset" values="0;-48" dur="3.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M54 91H268L240 129H67L54 91Z" fill="url(#gold)" stroke="#FFE99A" stroke-opacity="0.65" stroke-width="1.4">
+      <animate attributeName="stroke-dashoffset" values="0;-48" dur="3.4s" begin="-0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M26 164H319L291 202H39L26 164Z" fill="url(#gold)" stroke="#FFE99A" stroke-opacity="0.65" stroke-width="1.4">
+      <animate attributeName="stroke-dashoffset" values="0;-48" dur="3.4s" begin="-1.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M88 18L20 202H62L130 18H88Z" fill="url(#gold)"/>
+    <path d="M115 18L47 202" stroke="#FFF1AE" stroke-opacity="0.7" stroke-width="1.4"/>
+    <path d="M107 25H318" stroke="#FFF4BB" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="stroke-dasharray" values="0 220;72 148;0 220" dur="3.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M79 98H243" stroke="#FFF4BB" stroke-width="2" stroke-linecap="round" opacity="0.72">
+      <animate attributeName="stroke-dasharray" values="0 170;54 116;0 170" dur="4.2s" begin="-1.1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M51 171H294" stroke="#FFF4BB" stroke-width="2" stroke-linecap="round" opacity="0.76">
+      <animate attributeName="stroke-dasharray" values="0 250;82 168;0 250" dur="4.6s" begin="-2s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="344" cy="37" r="3" fill="#FFF0A8" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="269" cy="110" r="3" fill="#FFF0A8" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="183" r="3" fill="#FFF0A8" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 
-  <text x="50%" y="170"
-        text-anchor="middle"
-        fill="#EDE9FE"
-        font-size="24"
-        font-family="Arial, Helvetica, sans-serif"
-        font-weight="500">
-    Studying/learning | 1/5
-  </text>
+  <rect x="-360" width="300" height="320" fill="url(#scan)" transform="skewX(-16)">
+    <animate attributeName="x" values="-360;1450" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <g transform="translate(58 58)">
+    <rect width="76" height="76" rx="18" fill="#0C0A05" stroke="#A37820" stroke-opacity="0.72"/>
+    <path d="M18 18H61L53 29H25L22 34H50L42 45H18L14 52H47L39 63H8L18 18Z" fill="url(#gold)"/>
+  </g>
+
+  <text x="154" y="74" fill="#C99C35" font-size="13" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="3.2">EVALINS / DEVELOPER PROFILE</text>
+  <text x="154" y="129" fill="#FFFDF8" font-size="48" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="1">CAIO HENRIQUE</text>
+  <text x="154" y="164" fill="#E0BA55" font-size="15" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2.15">DEVELOPMENT · AI · AUTOMATION</text>
+
+  <g transform="translate(154 193)">
+    <rect width="207" height="34" rx="17" fill="#D5A83D" fill-opacity="0.09" stroke="#D5A83D" stroke-opacity="0.5"/>
+    <circle cx="18" cy="17" r="4" fill="#E9C45A">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="31" y="22" fill="#F1D477" font-size="11.5" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="1.1">ADS · 2ND SEMESTER</text>
+  </g>
+  <g transform="translate(375 193)">
+    <rect width="213" height="34" rx="17" fill="#0A0905" stroke="#D5A83D" stroke-opacity="0.38"/>
+    <text x="18" y="22" fill="#C9A345" font-size="11" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="1">OPEN TO OPPORTUNITIES</text>
+  </g>
+
+  <text x="154" y="268" fill="#94876C" font-size="11" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">ANHANGUERA UNIVERSITY · SÃO PAULO, BRAZIL</text>
+  <text x="1192" y="280" fill="#B98A27" font-size="10" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="3" transform="rotate(-90 1192 280)">EVALINS</text>
+  <rect x="1" y="1" width="1278" height="318" rx="17" stroke="#D4AA43" stroke-opacity="0.2"/>
 </svg>
