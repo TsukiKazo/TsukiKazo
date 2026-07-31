@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TsukiKazo/TsukiKazo/main/banner.svg?v=evalins-en-2" alt="Caio Henrique - Development, Artificial Intelligence and Automation" width="100%" />
+  <img src="https://raw.githubusercontent.com/TsukiKazo/TsukiKazo/main/evalins-banner.svg?v=3" alt="Caio Henrique - Development, Artificial Intelligence and Automation" width="100%" />
 </p>
 
 <p align="center">
