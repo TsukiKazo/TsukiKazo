@@ -158,6 +158,13 @@ I work with both traditional programming and AI-assisted development, combining 
 
 ## Let's Connect
 
+## Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TsukiKazo/TsukiKazo/output/github-contribution-grid-snake-dark.svg?v=3" alt="Animated contribution snake" />
+</p>
+
+---
 <p align="center">
   <a href="https://www.instagram.com/evalins_tec/">
     <img src="https://img.shields.io/badge/INSTAGRAM-090909?style=for-the-badge&logo=instagram&logoColor=D4AF37" alt="Evalins on Instagram" />
